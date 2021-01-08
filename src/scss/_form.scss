@@ -1,0 +1,31 @@
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__search,
+  &__btn {
+    outline: none;
+  }
+
+  &__search {
+    border-radius: 3px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border: 1px solid #c9c9c9;
+    border-right: none;
+    padding: 8px 0.5rem;
+    width: 25%;
+  }
+
+  &__btn {
+    border: 1px solid $blue;
+    border-left: none;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    background-color: $blue;
+    cursor: pointer;
+    color: $white;
+    padding: 8px 0.8rem;
+  }
+}

@@ -2,10 +2,11 @@ import React from 'react'
 import Header from './components/Header'
 import Form from './components/Form'
 import Anime from './components/Anime'
+import './scss/style.css'
 
-const App = () => {
+function App() {
   return (
-    <div className="App">
+    <div className="container">
       <Header />
       <Form />
       <Anime />

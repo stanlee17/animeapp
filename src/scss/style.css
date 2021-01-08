@@ -7,9 +7,73 @@
 
 body {
   font-family: 'Noto Sans JP', sans-serif;
+  color: #181818;
 }
 
-header {
-  margin: 1rem;
+h1 {
+  font-size: 1.7rem;
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+}
+
+.header__logo {
+  width: 50px;
+}
+
+.header__logo-name {
+  margin-left: 1rem;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form__search, .form__btn {
+  outline: none;
+}
+
+.form__search {
+  border-radius: 3px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border: 1px solid #c9c9c9;
+  border-right: none;
+  padding: 8px 0.5rem;
+  width: 25%;
+}
+
+.form__btn {
+  border: 1px solid #2463eb;
+  border-left: none;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  background-color: #2463eb;
+  cursor: pointer;
+  color: #f0f0f0;
+  padding: 8px 0.8rem;
 }
 /*# sourceMappingURL=style.css.map */
