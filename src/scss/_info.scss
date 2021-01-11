@@ -1,0 +1,14 @@
+.info {
+  display: flex;
+  align-items: center;
+  margin: 3rem 0;
+
+  &__image {
+    border-radius: 5px;
+    margin-right: 2rem;
+  }
+
+  &__about {
+    line-height: 2;
+  }
+}

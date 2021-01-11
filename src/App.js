@@ -3,10 +3,13 @@ import axios from 'axios'
 import Header from './components/Header'
 import Form from './components/Form'
 import Content from './components/Content'
+import Info from './components/Info'
 import { getSearchURL } from './apis'
+import { Route, Switch } from 'react-router-dom'
 import './scss/style.css'
 
 function App() {
+  // State
   const [query, setQuery] = useState('')
   const [animeList, setAnimeList] = useState([])
 
@@ -24,13 +27,20 @@ function App() {
   return (
     <div className="container">
       <Header />
-      <Form
-        query={query}
-        setQuery={setQuery}
-        searchHandler={searchHandler}
-        animeList={animeList}
-      />
-      <Content animeList={animeList} />
+      <Switch>
+        <Route exact path="/">
+          <Form
+            query={query}
+            setQuery={setQuery}
+            searchHandler={searchHandler}
+            animeList={animeList}
+          />
+          <Content animeList={animeList} />
+        </Route>
+        <Route path="/anime/:id">
+          <Info />
+        </Route>
+      </Switch>
     </div>
   )
 }
